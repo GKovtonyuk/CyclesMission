@@ -521,7 +521,7 @@ private: System::Void button4_Click(System::Object^ sender, System::EventArgs^ e
 
 	while (true)
 	{
-	a = Convert::ToInt32(Microsoft::VisualBasic::Interaction::InputBox("a=", " Введіть число", " ", 10, 10));
+	a = Convert::ToInt32(Microsoft::VisualBasic::Interaction::InputBox("Введіть " + i + "-е число", " Введіть число", " ", 10, 10));
 
 		if (a == ___)
 			break;
@@ -554,7 +554,7 @@ private: System::Void button3_Click(System::Object^ sender, System::EventArgs^ e
 
 	for (int i = ___; i <= ___; i++)
 	{
-		a = Convert::ToInt32(Microsoft::VisualBasic::Interaction::InputBox("a=", " Введіть число", " ", 10, 10));
+		a = Convert::ToInt32(Microsoft::VisualBasic::Interaction::InputBox("Введіть " + i + "-е число", " Введіть число", " ", 10, 10));
 
 richTextBox2->AppendText(a + "\n");
 
