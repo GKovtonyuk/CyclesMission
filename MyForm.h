@@ -1,6 +1,9 @@
 ﻿#pragma once
 #include <cstdlib>
 #include <ctime>
+#include <string>
+using namespace std;
+#using <Microsoft.VisualBasic.dll>
 
 namespace CyclesMission {
 
@@ -518,7 +521,7 @@ private: System::Void button4_Click(System::Object^ sender, System::EventArgs^ e
 
 	while (true)
 	{
-		a = Convert::ToInt32(textBox2->___);
+	a = Convert::ToInt32(Microsoft::VisualBasic::Interaction::InputBox("a=", " Введіть число", " ", 10, 10));
 
 		if (a == ___)
 			break;
@@ -551,9 +554,9 @@ private: System::Void button3_Click(System::Object^ sender, System::EventArgs^ e
 
 	for (int i = ___; i <= ___; i++)
 	{
-		a = Convert::ToInt32(textBox1->___);
+		a = Convert::ToInt32(Microsoft::VisualBasic::Interaction::InputBox("a=", " Введіть число", " ", 10, 10));
 
-		richTextBox1->AppendText(Convert::ToString(a) + "\n");
+richTextBox2->AppendText(a + "\n");
 
 		// перевірка на двоцифрове число
 		if (a ___ 10 && a ___ 99)
